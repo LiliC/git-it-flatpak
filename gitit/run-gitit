@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+set -e
+
+cd '@SUPDIR@/core/out/Git-it-linux-x64/'
+./Git-it

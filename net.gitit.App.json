@@ -1,0 +1,95 @@
+{
+    "app-id": "net.gitit.App",
+    "base": "io.atom.electron.BaseApp",
+    "base-version": "master",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "1.4",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "run-gitit",
+    "finish-args": [
+        "--device=dri",
+        "--filesystem=host",
+        "--share=ipc",
+        "--share=network",
+        "--socket=pulseaudio",
+        "--socket=x11"
+    ],
+    "modules": [
+        {
+            "name": "nodejs",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://nodejs.org/dist/v5.12.0/node-v5.12.0.tar.xz",
+                    "path": "node-v5.12.0.tar.xz",
+                    "sha256": "4f926373f11f2a25156eee1804ec012eb912c42e5d34fc2909889da22efdadfe"
+                }
+            ]
+        },
+	{
+	    "name": "git",
+	    "sources": [
+		{
+			"type": "git",
+			"url": "https://github.com/git/git.git",
+			"branch": "v2.11.0"
+		},
+		{
+                    "type": "shell",
+                    "commands": [
+			"make configure" ,
+			"./configure --prefix=/app/" ,
+			"make all" ,
+			"make install"
+			]
+	     }]
+	},
+	{
+            "name": "gitit",
+            "build-options": {
+                "build-args": [
+                    "--share=network"
+                ]
+            },
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/jlord/git-it-electron.git",
+                    "branch": "4.2.2",
+		    "dest": "core"
+                },
+                {
+                    "type": "file",
+                    "path": "gitit/Makefile"
+                },
+                {
+                    "type": "file",
+                    "path": "gitit/install"
+                },
+                {
+                    "type": "file",
+                    "path": "gitit/configure"
+                },
+                {
+                    "type": "file",
+                    "path": "gitit/run-gitit"
+                }
+            ]
+        },
+        {
+            "name": "electron-prebuilt",
+            "no-autogen": true,
+            "build-options": {
+                "build-args": [
+                    "--share=network"
+                ]
+            },
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "electron-prebuilt/Makefile"
+                }
+            ]
+        }
+    ]
+}
