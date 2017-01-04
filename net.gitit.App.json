@@ -111,6 +111,10 @@
                 {
                     "path": "metadata/net.gitit.App.desktop",
                     "type": "file"
+                },
+                {
+                    "path": "metadata/net.gitit.App.appdata.xml",
+                    "type": "file"
                 }
             ]
         }

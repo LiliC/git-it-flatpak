@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>net.gitit.App.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <summary>App for learning Git and GitHub</summary>
+  <description>
+    <p>
+    Git-it is a desktop app that teaches you how to use Git and GitHub on the command line.
+    </p>
+  </description>
+  <url type="homepage">https://github.com/jlord/git-it-electron</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cloud.githubusercontent.com/assets/1305617/14594613/23873f64-04ed-11e6-9d3b-72f424dd0842.png</image>
+    </screenshot>
+  </screenshots>
+  <project_license>BSD-2-Clause</project_license>
+  <developer_name>Jessica Lord</developer_name>
+  <url type="bugtracker">https://github.com/jlord/git-it-electron/issues</url>
+  <url type="help">https://github.com/jlord/git-it-electron/blob/master/README.md</url>
+</component>
