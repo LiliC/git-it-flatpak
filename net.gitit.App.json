@@ -91,6 +91,28 @@
                     "type": "file"
                 }
             ]
+        },
+        {
+            "name": "metadata",
+            "no-autogen": true,
+            "sources": [
+                {
+                    "path": "metadata/Makefile",
+                    "type": "file"
+                },
+                {
+                    "path": "metadata/install",
+                    "type": "file"
+                },
+                {
+                    "path": "metadata/net.gitit.App.png",
+                    "type": "file"
+                },
+                {
+                    "path": "metadata/net.gitit.App.desktop",
+                    "type": "file"
+                }
+            ]
         }
     ]
 }

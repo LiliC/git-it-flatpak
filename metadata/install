@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+
+install -D 'net.gitit.App.desktop' "${prefix}/share/applications/net.gitit.App.desktop"
+install -D 'net.gitit.App.png' "${prefix}/share/icons/hicolor/128x128/apps/net.gitit.App.png"

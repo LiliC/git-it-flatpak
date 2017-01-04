@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Git-it
+GenericName=Git
+Comment=Git
+Exec=run-gitit
+Icon=net.gitit.App
+Terminal=false
+Categories=Development;
