@@ -5,7 +5,7 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "1.4",
     "sdk": "org.freedesktop.Sdk",
-    "command": "run-gitit",
+    "command": "Git-it",
     "finish-args": [
         "--device=dri",
         "--filesystem=host",
@@ -57,22 +57,10 @@
                     "type": "git",
                     "url": "https://github.com/jlord/git-it-electron.git",
                     "branch": "4.2.2",
-                    "dest": "core"
+                    "dest": "git-it"
                 },
                 {
                     "path": "git-it/Makefile",
-                    "type": "file"
-                },
-                {
-                    "path": "git-it/install",
-                    "type": "file"
-                },
-                {
-                    "path": "git-it/configure",
-                    "type": "file"
-                },
-                {
-                    "path": "git-it/run-gitit",
                     "type": "file"
                 }
             ]
@@ -98,10 +86,6 @@
             "sources": [
                 {
                     "path": "metadata/Makefile",
-                    "type": "file"
-                },
-                {
-                    "path": "metadata/install",
                     "type": "file"
                 },
                 {
